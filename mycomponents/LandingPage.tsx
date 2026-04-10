@@ -8,8 +8,13 @@ import PropertyListing from "./PropertyListing";
 import Sales from "./Sales";
 import Testimonital from "./Testimonial";
 
+interface Client {
+  name: string;
+  logo: string;
+}
+
 const LandingPage = ({ clientData }: { clientData: string }) => {
-  let client = clients[clientData as keyof typeof clients];
+  let client = (clients as Record<string, Client>)[clientData];
   if (!client) {
     client = {
       name: clientData.replaceAll("%2B", " "),
