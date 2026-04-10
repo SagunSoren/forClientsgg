@@ -15,6 +15,7 @@ import Link from "next/link";
 import { TfiClose } from "react-icons/tfi";
 import { RxHamburgerMenu } from "react-icons/rx";
 
+
 const Navbar = ({ clientData }: { clientData: any }) => {
   return (
     <div className="bg-transparent absolute z-10 w-full text-white border-b-2 border-white">

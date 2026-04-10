@@ -14,7 +14,7 @@ interface Client {
 }
 
 const LandingPage = ({ clientData }: { clientData: string }) => {
-  let client = (clients as Record<string, Client>)[clientData];
+  let client = clients[clientData];
   if (!client) {
     client = {
       name: clientData.replaceAll("%2B", " "),
