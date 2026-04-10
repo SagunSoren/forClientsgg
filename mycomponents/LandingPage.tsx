@@ -9,14 +9,13 @@ import Sales from "./Sales";
 import Testimonital from "./Testimonial";
 
 const LandingPage = ({ clientData }: { clientData: string }) => {
-  var client = clients[clientData];
-  console.log(clientData);
+  let client = clients[clientData as keyof typeof clients];
   if (!client) {
     client = {
       name: clientData.replaceAll("%2B", " "),
+      logo: "/hero/hero.png",
     };
   }
-  console.log(client);
   return (
     <div>
       <Navbar clientData={client} />
