@@ -70,25 +70,23 @@ const Footer = ({ clientData }: { clientData: any }) => {
         <div className="lg:w-60 max-lg:mt-10">
           <p className="mb-4 max-lg:hidden">Follow Us</p>
           <div className="flex gap-1">
-            <div className="h-12 flex items-center justify-center w-12 bg-blue-500 rounded-full text-2xl">
+            {/* <div className="h-12 flex items-center justify-center w-12 bg-blue-500 rounded-full text-2xl">
               <FaFacebook />
-            </div>
+            </div> */}
             <div className="h-12 flex items-center justify-center w-12 bg-orange-500 rounded-full text-2xl">
               <Link
                 target="blank"
-                href={
-                  "https://www.instagram.com/vaid.smyle?igsh=MXNvMmNkMzY5NTQ3Nw=="
-                }
+                href={"https://www.instagram.com/beeviral.online/"}
               >
                 <FaInstagram />
               </Link>
             </div>
-            <div className="h-12 flex items-center justify-center  w-12 bg-red-500 rounded-full text-2xl">
+            {/* <div className="h-12 flex items-center justify-center  w-12 bg-red-500 rounded-full text-2xl">
               <FaYoutube />
             </div>
             <div className="h-12 flex items-center justify-center  w-12 bg-blue-400 rounded-full text-2xl">
               <FaLinkedin />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
